@@ -1,0 +1,20 @@
+Ejercicio autoevaluativo FORMS + Js
+Actividad
+ 1) Crear un formulario con:
+Nombre (obligatorio, máximo 9 de longitud)
+Temperatura preferida (número, obligatorio, mínimo -10, máximo 60)
+Teléfono (opcional, en caso de ser provisto deben ser todos números, no arrancar en cero y longitud igual a 10)
+2) Dar estilo particular al formulario.
+3) Validar campos mediante javascript.
+4) Mostrar errores creando elementos del DOM.
+5) Cambiar estilo a campos con errores.
+6) Al enviar, si los datos están bien, agregar mensaje a una lista de mensajes, con el siguiente formato:
+Si proveyó el teléfono,
+“Hola <nombre>, te llamaremos al <teléfono> cuando hagan <temperatura> grados”
+Sí no,
+“Hola <nombre>, nos vemos cuando hagan <temperatura> grados”
+7) Luego de enviar correctamente, limpiar todos los campos del formulario, errores de validación y cambios de estilo.
+NOTA: en el formulario, conviene usar el evento "onsubmit" para llamar a la función que hace la validación. A los efectos del práctico, la función de validación siempre debe devolver false, así el formulario no se envía. En el onsubmit, hacer de esta manera:
+ <form onsubmit="return validar()">
+Es decir, haciendo return de la función para validar que haya definido.
+PD: Manden el archivo así le damos una devolución. Mejor que sea el .html y tenga adentro el js y css, ya que es cortito el ejercicio y para nuestra facilidad en la corrección.

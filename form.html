@@ -1,0 +1,36 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="style_form.css">
+
+</head>
+
+
+<body>
+    <h2>Formulario ejercicio autoevaluativo</h2>
+    <form class="estilo_form"  onsubmit="return validar()">
+    <label> Nombre*</label> 
+    <input id="txtNombre" placeholder="campo requerido"> <br>
+    
+ <!-- con value de forma prederteminada arranca la T° en 20 -->
+    <label> Temperatura*</label>
+    <input id="numDeRangoSeleccionado" type="range" min="-10" max="60" value="20" oninput="mostrarTemp()" > <br>
+    <input id="numTemp" type="number" min="-10" max="60" value="20"><br>
+   
+    <label> Telefono </label> 
+    <input id ="txtTel" type="number" placeholder="ingrese sin 0"> <br>
+
+    <button type="submit">Enviar </button>
+    </form>
+
+<!--    lista de errores -->
+<ul class="styleListaError" id="listaErrores"></ul>
+<ol class="styleListaOK" id="listaMensajesEnviados"></ol>
+
+<script src="form.js"></script>
+
+
+</body>
+</html>
